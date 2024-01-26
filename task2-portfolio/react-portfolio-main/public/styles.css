@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+    background-color:#02011c;
+    box-sizing: border-box;
+    color:var(--text1);
+   
+  font-family: 'Roboto Slab', serif;
+
+}
+:root {
+    --color-charcoal: #222023;
+    --text1: color-mix(in srgb, var(--color-charcoal) 50%, white);
+}
+
+body{
+    height: max-content;
+    background-color: #020630;
+   
+}.about-section{
+    padding: 3rem 0 3rem 0;
+}
+.aboutclass{
+padding-top: 8%;
+display:flex;
+flex-wrap: wrap;
+}
+
+.img-bg-div{
+    background: linear-gradient(135.9deg, rgb(40, 3, 103) 30.4%, rgb(98, 12, 135) 56.1%);
+   border-radius: 57% 30% 25% 66% / 59% 25% 66% 25%;
+}
+.mypic{
+    height:18.75rem;
+    width:13.75rem;
+    background-color: transparent;
+    border-radius:1.5rem ;
+    
+}
+
+.mybtn{
+    
+    background: linear-gradient(135.9deg, rgb(40, 3, 103) 30.4%, rgb(98, 12, 135) 56.1%);
+    margin-right: 2%;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.mybtn:hover{
+    
+    background: transparent;
+    border: 0.1rem solid var(--text1);
+}
+.mybtn2{
+    
+    background: transparent;
+    margin-right: 2%;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.mybtn2:hover{
+    
+    background: linear-gradient(135.9deg, rgb(40, 3, 103) 30.4%, rgb(98, 12, 135) 56.1%);
+    margin-right: 2%;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+
+.skillimg{
+    height:75px;
+    width: 75px;
+    display:block;
+}
+.skillimg:hover{
+   padding: 0.5rem;
+    border: 1px solid var(--text1);
+    border-radius: 1rem;
+    background: linear-gradient(135.9deg, rgb(87, 4, 231) 30.4%, rgb(0, 85, 188) 56.1%);
+    display:block;
+}
+
+.compdiv{
+    justify-content: center;
+    align-items: center;
+}
+.skilldiv{
+    padding: 10rem 0 10rem 0;
+   
+   
+}
+
+.innerdiv-of-skill{
+    padding: 0 15% 0 15%;
+}
+.heading{
+    margin-bottom: 25px;
+  
+
+}
+.socialdiv{
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    padding: 1rem 0 1rem 0;
+    width: fit-content  ;
+   
+ 
+}
+.socialdiv:hover{
+border: 1px solid var(--text1);
+border-radius: 1rem;
+}
+
+#education{
+   margin-bottom:8rem ;
+    
+}
+.edu-div{
+  width: fit-content;
+  margin: auto;   
+  padding:1.5rem;
+  border: 1px solid var(--text1);
+  border-radius: 2rem;
+
+}
+
+.project-container{
+  padding: 1rem 0 1rem 0;  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+   
+}
+.project-imgdiv{
+    background: transparent;
+    display: inline-block;
+}
+.projectimg{
+    height:150px;
+    width: auto;
+  background: transparent;
+    border-radius: 8px;
+}
+.projectheading{
+    background-color: white;
+}
+.projectimgdet{
+    height:150px;
+    width: auto;
+    background: linear-gradient(135.9deg, rgb(40, 3, 103) 40.4%, rgb(96, 8, 134) 70.1%);
+    border-radius: 8px;
+}
+.Project-section{
+  padding: 5rem 0 8rem 0;
+
+}
+.descsection{
+    background-color: white;
+    padding: 2%;
+}
+.project-entity{
+  /*  background: linear-gradient(135.9deg, rgb(40, 3, 103) 40.4%, rgb(96, 8, 134) 70.1%);*/
+    padding-top:1.2rem;
+    padding-left: 0rem;
+    padding-bottom: 1.2rem;
+    border-radius: 2rem;
+    border:1px solid transparent;
+    color:#02011c ;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+    border: 1px solid var(--text1) ;
+}
+.project-entity:hover{
+    background: transparent;
+    border: 1px solid var(--text1) ;
+    
+}
+.project-entity h4{
+
+  background: transparent;
+  margin: 1rem 0 1rem;
+  
+
+}
+.heading-link-div{
+    display: inline-block;
+    background: transparent;
+    padding-left: 1rem;
+}
+@media screen and (max-width:992px) {
+
+    .project-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+   .mypic{
+    display: none;
+   }
+        
+  
+    .img-bg-div{
+        background: transparent;
+        display: none;
+    }
+
+  
+    
+}
+
+@media screen and (max-width:600px) {
+    .project-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .mypic{
+       display:none;
+        
+    }
+    .img-bg-div{
+        background: transparent;
+        display:none;
+    }
+    
+
+}
